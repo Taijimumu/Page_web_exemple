@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;  
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.site-menu{
+    text-align: center;
+    height: 80px;
+}
+
+.site-menu a:hover{
+    border-bottom: #1CF0F9 5px;
+}
+
+.pt:nth-child(1){
+    color: #1CF0F9;
+}
+
+.pt:nth-child(2){
+    color: #85ecf3;
+}
+
+.backheader{
+    display: flex;
+    justify-content: center;
+    background-image: url("img/smartphone.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.backheader h1{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 2.3rem;
+}
+.backheader a{
+    content: "";
+    display: inline-block;
+    height: 5px;
+    text-align: center;
+    height: 100%;
+}
+
+.site-header {
+    margin: 0;
+    display: block;
+    position: fixed;
+    background-color:#171616b0;
+}
+
+.site-content{
+    margin: 0;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nave-item{
+    display: inline-block;
+    height: 100%;
+    line-height: 80px;
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;    
+}
+
+.titre{
+    display: block;
+    font-size: 2em;
+    text-align: left;
+}
+.titre:before{
+    content: "";
+    background-color: #1CF0F9;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.exception{
+    width: 1000px;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.exception p{
+      margin: 10px;
+}
+
+.exception article{
+    background-color:#D8D8D8;
+    border-radius: 10px;
+    width: 31%;
+}
+
+  .prod{ 
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .prod article{
+    box-shadow: 1px 1px 5px #555;
+    display: inline-block;
+    width: 32%;
+  }
+  .produitblock img{
+      width: 100%;
+  }
+
+.produitblock a{
+    background-color: #1CF0F9;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    vertical-align: top;
+    width: 50%;
+    height: 8%;
+    position: relative;
+    display: inline-block;
+    bottom: -7px;
+}
+
+.sur-histoire{
+    margin: 0 auto;
+    
+}
+
+.histoire{
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+.histoire article{
+    display: block;
+}
+
+
+.histoire-art{
+    display: inline-block;
+}
+.histoire-art img{
+    margin: 10px;
+    float: left;
+    width: 350px;
+    border: solid;
+    border-color: #1CF0F9;
+    border-width: 10px;
+}
+
+.paraph{
+    margin: 10px;
+    text-align: justify;
+}
+
+.avisgdsection{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+ 
+.avissection{
+    width: 1000px;
+    display: flex;
+}
+
+ 
+.avissection img{
+    float: left;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+}
+
+.avissection article{
+    border: solid;
+    border-color: #D8D8D8;
+    box-shadow: 1px 1px 5px #555;
+    border-width: 1px;
+    margin: 0 auto;
+    width: 80%;
+}
+.avissection:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.avissection img:nth-child(2){
+    float: right;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    flex-grow: 2;
+}
+
+.avissection article:nth-child(2){
+    box-shadow: 1px 1px 5px #555;
+    width: 60%;
+}
+
+
+/*J AI ESSAYE MAIS J AI PAS REUSSI  ET PAS LE TEMPS:-(*/
+
+/*@media(max-width: 1400px){
+    .site-content{
+        width: 90%;
+    }
+}*/
+@media(max-width: 1200px){
+    .backheader img{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1000px){
+    .site-header{
+        height: auto;
+    }
+    .exception{
+        width: 90%;
+    }
+
+    .produitblock, .fonctionblock{
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    .histoire{
+        width: 90%;
+    }
+    .backheader img{
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px){
+    .exception article{
+        width: 100%;
+    }
+}
+/*
+@media(max-width: 450px){
+    .backheader img{
+        width: 90%;
+    }
+    .exception{
+        display: block;
+    }
+    .prod{
+        flex-wrap: wrap;
+    }
+    .prod img{
+        width: 100%;
+    }
+}*/
+
+@media (max-width: 630px){
+    .feature {
+      width: 49%;
+    }
+  
+    .product{
+      width: 45%;
+    }
+}
+  
+@media (max-width: 420px){
+    .fonctionblock{
+      width: 100%;
+    }
+    .prod{
+      width: 100%;
+    }
+}

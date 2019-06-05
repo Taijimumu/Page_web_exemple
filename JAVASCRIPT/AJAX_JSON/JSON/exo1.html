@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="utf-8">
+        </head>
+    <body>
+
+        <p>Accéder aux valeurs JSON</p>
+        <p id="json">nom</p>
+        <p id="adress">adresse</p>
+        <p id="options">Ecrire le nombre de vitesse de la voiture</p>
+        <input type="text" name="gear" id="gear">
+        <button id="button" >Valider</button>
+        
+        <script>
+            var client,  nom; //déclaration de 2 variables
+            client = {
+	            "nom": "Bob",
+	            "age": 42,
+	            "voiture":{ 
+                    "Marque": "Renault",
+                    "année": "2 ans",
+                    "modèle": "Twingo" 
+                }
+            };
+            client.prenom = "Bobo";
+            document.getElementById("json").innerHTML = client.prenom + " " + client.nom;
+            console.log(client);
+
+            client.adresse = "5 rue des Marchands";
+            client.options = {
+                "nberoues": "5",
+                "nbeplace" : "5",
+                "nbeVitesse": "250"
+            }
+            document.getElementById("adress").innerHTML = client.adresse;
+            for(x in client.options){
+                document.getElementById("options").innerHTML += x + "<br>";
+            }
+            console.log(client);
+            
+
+
+            var gear = $("#gear").val();
+            $("#valid").click(function(){
+                alert('yes');
+            });
+            console.log(gear);
+
+        </script>
+   
+    </body>
+</html>

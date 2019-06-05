@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color:#D8D8D8;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .site-header {
+    background-color:#A54F31;
+    height: 80px;
+  }
+
+  .site-content{
+      margin: 0;
+      width: 1100px;
+      margin: 0 auto;
+  }
+
+  .site-header h1{
+      display: inline-block;
+      color :white;
+      float: left;
+      margin:0;
+  }
+
+  .header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aUn{
+      display: block;
+      color: white;
+      font-weight: normal;
+  }
+
+
+  .site-menu{
+    display: inline-block;
+    float: right;
+    height: 80px;
+  }
+
+  .na{
+      display: inline-block;
+      height: 100%;
+      line-height: 80px;
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+      background-color: #6A3526;
+  }
+
+  .na:hover{  
+    color: white;
+    padding: 0 20px;
+    background-color: #45261C;
+  }
+
+  .content{
+    background-color: white;
+  }
+  .content img{
+    width: 250px;
+  }
+  .specialrover img{
+    float: left;
+    margin: 15px;
+  }
+
+  .specialrover1 img{
+    float: right;
+    margin: 15px;
+  }
+  .specialrover{
+    clear: both;
+    overflow: hidden;
+  }
+
+  .specialrover{
+    margin:10px;
+  }
+  .specialrover1{
+    margin:10px;
+  }
+  .specialrover1{
+    clear: both;
+    overflow: hidden;
+  }
+
+  .ImageMars{
+    background-image: url("img/mars.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    text-align: center;
+}
+
+.ImageMars h1{
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+  .ImageMars a{ 
+      display: inline-block;
+      color: white;
+      background-color: #45261C;
+      margin-top: 20px;
+      padding : 15px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1.3rem;
+  }
+
+  
+  .specialrover img{
+    width: 250px;
+  }
+
+ 
+  .titre{
+    text-align: center;
+    color: #6A3526;
+  }
+  .titre2{
+    text-align: center;
+    color: #6A3526;
+  }
+
+  .titre:after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-image:linear-gradient(-90deg,#A54f3161,#A54F31);
+    height: 4px;
+    width: 100px;
+    border-radius: 10px;
+  }
+
+  .pics{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+ 
+  .pics article{
+    width: 31%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .pics img{
+   width: 100%;
+
+  }
+  .pics h1{
+    position: absolute;
+    color: white;
+    text-align: center;
+    left: 0;
+    bottom:-16px;
+    right:0;
+    background-color: #151313e0;
+    padding: 15px;
+    display: none;
+    
+  }
+  .pics article:hover h1{
+    display: block;
+  }
+
+  .tab{
+    width: 100%;
+    overflow-x: scroll;
+    text-align: center;
+  }
+
+  .tableau{
+    text-align: center;
+    border: solid;
+    border-width: 0.5px;
+    border-color: gray;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .tableau th{
+    padding: 8px;
+  }
+  .tableau td{
+    padding: 8px;
+  }
+
+  .tr1 td{
+    font-weight: bold;
+  }
+
+  .tableau tr:first-child{
+    background-color: #A54F31;
+    color: white;
+  }
+.tr1{
+  background-color: white;
+}
+
+.tr1:nth-child(2n+1){
+  background-color:gainsboro;
+}
+
+
+.tableau a{
+  text-decoration: none;
+  color: white;
+  background-color: #A54F31;
+  border: solid;
+  border-width: 0.5px;
+  border-color: gray;
+  padding: 5px;
+}
+
+.localisation{
+  text-align: center;
+  
+}
+iframe{
+  border: solid;
+  border-width: 8px;
+  border-color: #A54F31;
+  width: 70%;
+  height: 500px;
+}
+
+.offre img{
+  width: 100%;
+}
+
+.offre a{
+  display: block;
+  color: white;
+  background-color: #A54F31;
+  text-decoration: none;
+  padding: 15px;
+}
+.offre h4{
+  text-align: center;
+}
+
+.offre{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.offreblock a{
+  text-align: center;
+}
+
+.offreblock p{
+  margin: 10px;
+}
+
+.offreblock{
+  width: 25%;
+  background-color: white;
+  position: relative;
+}
+.offreblock span{
+  color: white;
+  background-color: #A54F31;
+  border-radius: 20px;
+  padding: 10px;
+}
+/*POUR FORMULAIRE !!!!!!!!!!!!*/
+.formsec{
+  background-color: #A54F31;
+  color: white;
+  display: inline-block;
+  text-align: center;
+
+}
+.formart{
+  border: solid;
+  border-color: white;
+  padding: 20px;
+  border-width: 1px;
+}
+
+.formsec input[type ="text"],select,textarea{
+  display: block;
+  width: 100%;
+}
+
+
+form{
+  text-align: center;
+  padding: 10px;
+}
+/*FIN DE STYLE !!!!!!!!!!!!*/
+
+.promo{
+  position: absolute;
+  top: -10px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+@media (max-width: 1200px){
+  .tableau{
+    width: 90%;
+  }
+  .site-content{
+    width: 90%;
+  }
+  .site-header{
+    height: auto;
+  }
+  .header-content{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+
+  
+}
+
+@media (max-width: 1000px){
+  .pics article{
+    width: 48%;
+  }
+  .offre article{
+    width:48%;
+  }
+  .titre{
+    text-align: center;
+  }
+
+}
+
+@media(max-width: 500px){
+  .offre article{
+    width: 100%;
+  }
+  .pics article{
+    width:100%;
+  }
+}
+@media(max-width: 400px){
+  .specialrover img{
+    width: 100%;
+  }
+}

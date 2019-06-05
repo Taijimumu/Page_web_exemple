@@ -1,0 +1,41 @@
+/* Sélectionne tous les éléments ayant pour balise "p" */
+p {}
+
+/* Sélectionne tous les éléments ayant pour balsie "fausseBalise" */
+fausseBalise {}
+
+/*
+  Element qui SE TROUVE DANS un autre élément
+  (le selecteur doit contenir un espace)
+*/
+article h1 {}
+
+/*
+  Sélectionne une balise avec une précision sur sa class ou son ID
+  (on ne met pas d'espace)
+*/
+/* Tous les h1 ayant la class "awesomeTitle" */
+h1.awesomeTitle {}
+
+/* Le h1 ayant l'ID "awesomeTitle" */
+h1#awesomeTitle {}
+
+/* Le h1 ayant l'ID "awesomeTitle" ET la class "test" en même temps */
+h1#awesomeTitle.test {}
+h1.test#awesomeTitle {}
+
+/*
+  Plusieurs selecteurs en même temps
+*/
+.test, li, #awesomeTitle {
+
+}
+
+/*
+  ON NE SELECTIONNERA QUASIMENT JAMAIS LES BALISES DIRECTEMENT
+  On sélectionnera plutôt les class
+*/
+
+.maListe {
+
+}

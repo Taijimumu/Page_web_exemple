@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>addClass demo</title>
+        <style>
+            .rouge {
+                color:red;
+                font-style: italic;
+            }
+        </style>
+
+ <script src="../jQuery.js"></script>
+</head>
+<body>
+ 
+<h1>Je veux être écrit en rouge et en italique</h1>
+<p>on ne touche pas à ma couleur</p>
+<h1>Je veux être écrit en rouge et en italique</h1>
+<button id="enleve">Enlève la couleur !!!</button>
+ 
+<script>
+    $("h1").addClass('rouge');
+
+    $("#enleve").click(function(){
+        $("h1").removeClass('rouge');
+        alert("oui");
+    });
+
+</script>
+ 
+</body>
+</html>

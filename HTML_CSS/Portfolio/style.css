@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.site-header {
+  background-color: orange;
+}
+
+.site-logo {
+  width: 120px;
+  vertical-align: middle;
+}
+
+.site-menu {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+a {
+  color: #96fbfa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.site-menu a {
+  background-color: white;
+}
+
+.site-menu a:nth-child(even){
+  background: gray;
+}
+
+.presentation img{
+  width: 200px;
+}
+
+.presentation{
+  text-align: center;
+  background-color: gold;
+  padding: 20px;
+}
+.presentation-content{
+  margin: 0;
+  background-color: greenyellow;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+}
+
+.presentation-description{
+  display: inline-block;
+  vertical-align: top;
+  background-color: aliceblue;
+}
+
+.presentation-description h1{
+  margin: 0;
+}
+
+.MLTH{
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+.JS{
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+.SSD{  
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+.autre{
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+
+.skills {
+  font-size: 0;
+  border : solid;
+  border-color: black;
+  border-width: 2px;
+  background-color: greenyellow;
+}
+
+.skills h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.skills article {
+  display: inline-block;
+  background: #efefef;
+  width: 25%;
+  font-size: 1rem;
+  vertical-align: top;
+  padding: 30px;
+}
+
+
+.projet{
+  float: left;
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  width: 50%;
+  background-color: gold;
+}
+
+.projet h2{
+  text-align: center;
+}
+
+.projet img{
+  float: left;
+  width: 150px;
+}
+
+.projet:nth-child(2n) img{
+  float: right;
+  width: 150px;
+}
+
+.bo{
+  text-align: center;
+  background-color: rgb(119, 0, 255);
+}
+
+.grand{
+  background-color:greenyellow;
+  text-align: center;
+}
+
+.formulaire{
+  background-color: blue;
+  display: inline-block;
+  text-align: left;
+}
+
+section{
+  border: solid;
+  border-color: gold;
+  border-width: 2px;
+  padding: 10px;
+}
+
+.formulaire div{
+  border: solid;
+  border-color: yellow;
+}
+
+.formulaire input[type ="text"],select,textarea{
+  display: block;
+  width: 100%;
+}
+
+form{
+  background-color: #A54F31;
+  padding: 10px;
+}
+
+

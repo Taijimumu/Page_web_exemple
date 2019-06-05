@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row full-height">
+            <div class="col-sm-4 col-md-3 bg-light">
+                <button id="ajout" class="btn btn-primary btn-lg btn-block my-3">+ Ajouter</button>
+                <div id="contactsList" class="list-group">
+                    <a href="#" class="list-group-item">blablabla</a>
+                    <a href="#" class="list-group-item">blablabla</a>
+                    <a href="#" class="list-group-item">blablabla</a>
+                    <a href="#" class="list-group-item">blablabla</a>
+                </div>
+            </div>
+                <form class="col-sm-8 col-md-9 py-3 px-5" id="contactForm">
+                    <h1>Contacts</h1>
+                    <label>Nom</label>
+                    <input type="text" class="form-control mb-2" name="nom" placeholder="Nom">
+                    <label>Prénom</label>
+                    <input type="text" class="form-control mb-2" name="prenom" placeholder="prénom">
+                    <label>E-mail</label>
+                    <input type="text" class="form-control mb-2" name="email" placeholder="Email">
+                    <label>N° de téléphone</label>
+                    <input type="text" class="form-control mb-2" name="phone" placeholder="N° tel">
+                    <button type="submit" class="btn btn-primary btn-lg">Sauvegarder</button> 
+                </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

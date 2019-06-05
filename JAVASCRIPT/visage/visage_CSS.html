@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Visage en CSS</title>
+	<!-- Balise auteur-->
+	<meta name="author" content="GRPG/G2R" />
+	<!-- Compatibilité caractères latin-->
+	<meta charset="utf-8">
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon
+	<link rel="icon" href="favicon.ico" sizes="16x16" type="image/png"> -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script> 
+	$(document).ready(function(){
+	    $("#blink").click(function(){
+	        $(".paupiere").slideDown("slow");// fait apparaître la div .paupiere en slideDown
+	        $(".paupiere").slideUp("fast");// fait disparaître la div .paupiere en slideUp et hide
+	    });
+	    $("#thug").click(function(){
+	        $(".lunette").toggle('slow','linear');// / fait apparaître et disparaître la div .lunette en slide à partir d'en haut à gauche de la div .lunette
+	    });
+	    $("#upset").click(function(){
+	    	$(".eye_g").removeClass('calme_g');//enlève la classe calme_g à la div eye_g
+	        $(".eye_d").removeClass('calme_d');//enlève la classe calme_d à la div eye_d
+	        $(".eye_g").addClass('upset_g');//ajoute la classe upset_g à la div eye_g
+	        $(".eye_d").addClass('upset_d');//ajoute la classe upset_d à la div eye_d
+	    });
+	    $("#calme").click(function(){
+	    	$(".eye_g").removeClass('upset_g');
+	        $(".eye_d").removeClass('upset_d');
+	        $(".eye_g").addClass('calme_g');
+	        $(".eye_d").addClass('calme_d');
+	    });
+	    $("#langue").click(function(){
+	        $("#bouche").addClass('ouverte');        
+	        $(".langue").slideDown('fast');
+	        $(".langue").delay('1500').slideUp('slow');//.delay attends pour enclencher la méthode
+	        setTimeout(
+			  function() 
+			  {
+			    $("#bouche").removeClass('ouverte'); 
+			  }, 2000);//mets en pause le script avant de lancer la méthode
+	    });
+	    $("#bisous").click(function(){
+	        $("#bouche").addClass('bisous');        
+	        setTimeout(
+			  function() 
+			  {
+			    $("#bouche").removeClass('bisous'); 
+			  }, 1500);
+		});
+
+		$("#coeur").click(function(){
+			$("vi")
+		})
+		$("mudamuda").click(function(){
+			$("#bouche").addClass('ouverte');
+		});
+
+	});
+	</script>
+	<style>
+		/* Si peu de CSS vous pouvez noter ici votre CSS au lieu de le placer dans un fichier CSS séparé */
+	.eye{
+		font-size: 2em;
+		position: relative;
+		transform: rotate(15deg);
+		color: rgba(0, 0, 0, 0.8);
+		opacity: .5;
+		border-top: #f5d2b1 8px solid;
+		margin: 0 10px;
+		border-top-right-radius: 30%;
+		border-top-left-radius: 15%;
+	}
+	.eye_d{
+		border-top-left-radius: 30%;
+		border-top-right-radius: 15%;
+		transform: rotate(-15deg);
+	}
+	.container{
+		width: 700px;
+		height: 300px;
+		text-align: center;
+		margin: auto;
+		font-size: 3em;
+		margin-top: 150px;
+		padding-top: 60px;
+	}
+	.paupiere{
+		background: #F5D2B1;
+		position: absolute;
+		width: 100%;
+		height: 65%;
+		top: 0;
+		margin-top: 20%;
+		border-radius: 50%;
+		display: none;
+		border-bottom: dotted red 8px;
+	}
+	.lunette{
+		position: relative;
+		top: -80px;
+		display: none;
+		width: 290px;
+	}
+	.lunette_g{
+		background: black;
+		position: relative;
+		width: 70px;
+		height: 100px;
+		top: 0;
+		border-bottom-right-radius: 70%;
+		border-bottom-left-radius: 30%;
+		border-top-left-radius: 10%;
+		margin:auto;
+		display: inline-block;
+		padding:0 20px;
+	}
+	.lunette_d{
+		background: black;
+		position: relative;
+		width: 70px;
+		height: 100px;
+		top: 0;
+		border-bottom-right-radius: 30%;
+		border-bottom-left-radius: 70%;
+		border-top-right-radius: 10%;
+		margin:auto;
+		display: inline-block;
+		padding:0 20px;
+	}
+	.lunette_m{
+		background: black;
+		position: relative;
+		width: 20px;
+		height: 10px;
+		top: 0px;
+		display: inline-block;
+		padding:0px 20px;
+		vertical-align: top;
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+	.lunette_b{
+		width: 40px;
+		height: 15px;
+		background: white;
+		border-top:10px solid black;
+		border-right: 10px solid black;
+		border-top-right-radius: 50%;
+		z-index: -1;
+		top: 10px;
+		transform: rotate(10deg);
+	}
+	.cont2{
+		margin-top: 0;
+		padding-top: 0;
+	}
+	.nez{
+		border: black solid 3px;
+		position: absolute;
+		margin: auto;
+		top: 120px;
+		left: 110px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 15px 100px 15px;
+		border-color: transparent transparent #F5D2B1 transparent;
+	}
+	#bouche{
+		border-bottom: pink solid 15px;
+		border-top: pink solid 10px;
+		width: 70px;
+		height: 8px;
+		border-radius: 50%;
+		margin: auto;
+		position: absolute;
+		top: 240px;
+		left: 90px;
+	}
+	.visage{
+		border: 2px solid #F5D2B1;
+		width: 250px;
+		height: 270px;
+		border-radius: 30%;
+		border-bottom-right-radius: 80%;
+		border-bottom-left-radius: 80%;
+		position: relative;
+		margin: auto;
+		top: -100px;
+		padding-top: 50px;
+	}
+	.hair{
+		background: repeating-linear-gradient(
+		  50deg,
+		  #b78f6a,
+		  #b78f6a 5px,
+		  #f5d2b1 5px,
+		  #b78f6a 7px
+			);
+		height: 80px;
+		width: 200px;
+		position: relative;
+		margin: auto;
+		top: -95px;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+		z-index: 3;
+	}
+	.upset_g{
+		transform: rotate(30deg);
+	}
+	.upset_d{
+		transform: rotate(-30deg);
+	}
+	.calme_d{
+		transform: rotate(-15deg);
+	}
+	.calme_g{
+		transform: rotate(15deg);
+	}
+	.ouverte{
+		border-bottom: pink solid 15px !important;
+		border-top: pink solid 10px !important;
+		width: 80px !important;
+		height: 25px !important;
+		border-radius: 45% !important;
+		margin: auto !important;
+		position: absolute !important;
+		top: 240px !important;
+		left: 85px !important;
+	}
+	.langue{
+		width: 50px;
+		height: 80px;
+		position: absolute;
+		top: 260px;
+		left: 100px;
+		margin: auto;
+		background-color: red;
+		opacity: 0.8;
+		border-radius: 0 0 50% 50%;
+		display: none;
+	}
+	.langue::after{
+		content: " ";
+		border-right: 1px black solid;
+		opacity: 0.4;
+		width: 25px;
+		height: 60px;
+		position: absolute;
+		margin: auto;
+		right: 25px;
+		top: 10px;
+	}
+	.bisous{
+		border-bottom: pink solid 20px !important;
+		border-top: pink solid 15px !important;
+		width: 50px !important;
+		height: 5px !important;
+		border-radius: 50% !important;
+		top: 240px !important;
+		left: 100px !important;
+	}
+	</style>
+
+</script>	
+</head>
+<body>
+	<div class="container">
+		<div class="hair"></div>
+		<div class="visage">		
+			<i class="fa fa-eye eye eye_g">
+				<div class="paupiere"></div>
+			</i>
+			<i class="fa fa-eye eye eye_d">
+				<!--<div class="paupiere"></div>-->
+			</i>
+			<div class="lunette">
+				<div class="lunette_g"></div>
+				<div class="lunette_m"></div>
+				<div class="lunette_d"></div>
+				<div class="lunette_m lunette_b"></div>
+			</div>
+			<div class="nez"></div>
+			<div id="bouche"></div>
+			<div class="langue"></div>
+		</div>
+	</div>
+	<div class="container cont2">
+		<button id="blink">Clin d'oeil</button>
+		<button id="thug">Thug life</button>
+		<button id="upset">Enervé</button>
+		<button id="calme">Calme</button>
+		<button id="langue">Langue</button>
+		<button id="bisous">Bisous</button>
+		<button id="mudamuda">Muda Muda Muda !!</button>
+	</div>
+
+</body>
+</html>

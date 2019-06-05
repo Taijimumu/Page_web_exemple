@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="utf-8">
+        </head>
+    <body>
+
+        <p>Accéder aux valeurs JSON</p>
+        <p id="json"></p>
+
+        <script>
+            var client, nom; //déclaration de 2 variables
+            client = {
+	            "nom": "Bob",
+	            "age": 42,
+	            "voiture":{ 
+                "Marque": "Renault",
+                "année": "2 ans",
+                "modèle": "Twingo" 
+                }
+            };
+            for (x in client) {
+                document.getElementById("json").innerHTML += x + "<br>";
+                //+= pour afficher toutes les valeurs d'un fichier JSON
+            }
+            for (x in client.voiture) {
+                document.getElementById("json").innerHTML += x + "<br>"; 
+                //+= pour afficher toutes les valeurs d'un fichier JSON imbriqué
+            }
+        </script>
+
+    </body>
+</html>

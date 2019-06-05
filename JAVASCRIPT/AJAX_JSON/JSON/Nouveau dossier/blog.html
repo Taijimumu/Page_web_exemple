@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <title>Blog auto</title>
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+<h1>Blog de voiture</h1>
+
+<p>Ecrire le nom de la voiture</p>
+<input type="text" id="car">
+
+<p>Entrer le nombre de vitesse de votre voiture</p>
+<input type="text"  id="gear">
+
+<p>Entrer le nombre de place de votre voiture</p>
+<input type="text" id="place">
+
+<p>Entrer le nombre de roue de votre voiture</p>
+<input type="text" id="wheel">
+
+<button id="valid">Valider</button>
+
+
+<div id="result">Ma voiture est une ... qui a x roues, x places et x vitesse</div>
+
+<script>
+  $("#valid").click(function(){
+    var car = document.getElementById('car').value;
+    var gear = $("#gear").val();
+    var place = $("#place").val();
+    var wheel = $("#wheel").val();
+    
+    // JSON
+    var json ={
+        "car" : car,
+        "gear" : gear,
+        "place" : place,
+        "wheel" : wheel
+    };
+    console.log(json);
+    
+    var sentence = "Ma voiture est une " + json.car + " qui a " + json.wheel + " roues, " + json.place + " places et "+ json.gear + " vitesses";
+    document.getElementById('result').innerHTML = sentence;
+
+  });
+</script>
+
+</body>
+</html>
